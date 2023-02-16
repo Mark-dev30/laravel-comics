@@ -1,1 +1,188 @@
-@import '~bootstrap/scss/bootstrap'
+@import '~bootstrap/scss/bootstrap';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* HEADER */
+.ctn-header {
+    width: 100%;
+    height: 82px;
+}
+
+.row-header {
+    margin: 0 auto;
+    width: 85%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.image-logo {
+    width: 50%;
+    margin: 7px 0;
+}
+
+.menu-bar {
+
+    li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 0.5rem;
+        font-size: 13px;
+
+
+
+
+        a {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: black;
+            padding: 36px 0;
+
+            &.active {
+                border-bottom: 4px solid;
+                border-color: #0282f9;
+                color: #0282f9;
+            }
+
+            &:hover {
+                border-bottom: 4px solid;
+                border-color: #0282f9;
+                color: #0282f9;
+            }
+        }
+
+    }
+
+    .li-input {
+        border-bottom: 2px solid;
+        border-color: #0282f9;
+
+        input {
+            border: none;
+            width: 60px;
+        }
+    }
+}
+
+/* MAIN */
+
+.jumbotron {
+    width: 100%;
+    height: 300px;
+    background-image: url(../img/jumbotron.jpg);
+    background-size: cover;
+}
+
+.cont-jumbo {
+    position: relative;
+}
+
+.h4-series {
+    padding: 10px;
+    background-color: #0282f9;
+    position: absolute;
+    left: 105px;
+    top: 17.5rem;
+    color: white;
+}
+
+.container-cards {
+    width: 100%;
+    background-color: #1c1c1c;
+    padding: 1rem 0;
+}
+
+.content-cards {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container-link {
+    width: 100%;
+    height: 100px;
+    background-color: #0282f9;
+    display: flex;
+    align-items: center;
+
+    .content-link {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+
+        .link {
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 50px;
+                height: 50px;
+                object-fit: contain;
+            }
+
+            span {
+                text-transform: uppercase;
+                color: white;
+                margin-left: 10px;
+                font-size: 15px;
+            }
+        }
+
+    }
+}
+
+.content-btn {
+    margin-top: 30px;
+    text-align: center;
+
+    .more-btn {
+        color: white;
+        font-size: 12px;
+        padding: 8px 30px;
+        background-color: #0282f9;
+        border: none;
+    }
+}
+
+/* CARDS */
+.card {
+    width: calc(100% / 6 - 10px);
+    margin-top: 50px;
+    background-color: transparent;
+    border: none;
+
+
+    .card-img {
+        width: 100%;
+
+        img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            object-position: top;
+        }
+    }
+
+}
+
+.card-title {
+    margin-top: 10px;
+
+    p {
+        font-size: 11px;
+        text-transform: uppercase;
+        color: white;
+    }
+}
+
+/* FOOTER */
