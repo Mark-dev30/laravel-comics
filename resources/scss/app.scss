@@ -186,3 +186,80 @@
 }
 
 /* FOOTER */
+
+footer {
+    width: 100%;
+    background-image: url('../img/footer-bg.jpg');
+}
+
+.container-footer {
+    width: 80%;
+    margin: 0 auto;
+    background-image: url('../img/dc-logo-bg.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+
+    .content-menu {
+        display: flex;
+        padding: 30px;
+
+        .shop {
+            margin-top: 20px;
+        }
+
+        p {
+            color: white;
+        }
+
+        li {
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                color: grey;
+            }
+        }
+    }
+}
+
+.container-social {
+    width: 100%;
+    height: 70px;
+    background-color: #303030;
+
+    .row-social {
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.sign-btn {
+    border: 2px solid #0282f9;
+    background-color: transparent;
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+
+    li {
+        list-style: none;
+        display: inline-block;
+        margin: 10px;
+    }
+
+    h4 {
+        color: #0282f9;
+    }
+}
+
+.margin-20 {
+    margin-left: 20px;
+}
