@@ -3,14 +3,14 @@
         <div class="content-menu">
             <div class="dc-shop">
                 <p>DC COMICS</p>
-                <ul>
+                <ul class="p-0">
                     @foreach ($menu_footer['comics'] as $key => $item)
                     <li><a href="">{{$key}}</a></li>
                     @endforeach
                     {{-- <li v-for="item in comics"><a href="#">{{item.label}}</a></li> --}}
                 </ul>
                 <p class="shop">SHOP</p>
-                <ul>
+                <ul class="p-0">
                     @foreach ($menu_footer['shop'] as $key => $item)
                     <li><a href="">{{$key}}</a></li>
                     @endforeach
@@ -18,7 +18,7 @@
             </div>
             <div class="dc margin-20">
                 <p>DC</p>
-                <ul>
+                <ul class="p-0">
                     @foreach ($menu_footer['dc'] as $key => $item)
                     <li><a href="">{{$key}}</a></li>
                     @endforeach
@@ -26,11 +26,16 @@
             </div>
             <div class="sites margin-20">
                 <p>SITES</p>
-                <ul>
+                <ul class="p-0">
                     @foreach ($menu_footer['sites'] as $key => $item)
                     <li><a href="">{{$key}}</a></li>
                     @endforeach
                 </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+               <span>All Site Content TM and 2020 DC Entertainment, unless otherwise <a href="">noted here</a>. All rights reserved.<a href="">Cookie Settings</a></span> 
             </div>
         </div>
     </div>
