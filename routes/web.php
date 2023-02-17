@@ -64,7 +64,7 @@ Route::get('/', function () {
     return view('comics', compact('menu', 'comics', 'menu_footer'));
 })->name('comics');
 
-Route::get('/info-comic/{title}', function ($title) {
+Route::get('/info-comic/{key}', function ($key) {
 
     $menu = [
         'characters' => '/characters',
@@ -124,12 +124,8 @@ Route::get('/info-comic/{title}', function ($title) {
     ];
 
     $comics = config('comics');
+    $single = $comics[$key];
 
-    foreach ($comics as $item) {
-        if ($item['title'] == $title) {
-            return $single = $item;
-        }
-    }
 
     return view('info_comic', compact('single', 'menu', 'menu_footer'));
 })->name('info-comic');

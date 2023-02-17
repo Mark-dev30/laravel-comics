@@ -2,13 +2,12 @@
 
 @section('content')  
 <div class="cont-jumbo">
-    <div class="jumbotron"></div>
     <h4 class="h4-series">CURRENT SERIES</h4>
     <div class="container-cards">
         <div class="content-cards">
-            @foreach ($comics as $comic)
+            @foreach ($comics as $key => $comic)
                 <div class="card">
-                    <a href="{{ route('info-comic',['title' => $comic['title']])}}">
+                    <a href="{{ route('info-comic',['key' => $key])}}">
                         <div class="card-img">
                             <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}">
                         </div>
