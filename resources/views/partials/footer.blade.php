@@ -33,9 +33,10 @@
                 </ul>
             </div>
         </div>
-        <div class="row">
+        <div class="row pb-5">
             <div class="col-12">
-               <span>All Site Content TM and 2020 DC Entertainment, unless otherwise <a href="">noted here</a>. All rights reserved.<a href="">Cookie Settings</a></span> 
+               <span>All Site Content TM and 2020 DC Entertainment, unless otherwise <a href="">noted here</a>. All rights reserved.</span>
+               <p class="ms-2"><a  href="#">Cookie Settings</a></p>
             </div>
         </div>
     </div>
@@ -50,7 +51,7 @@
                     @foreach ($menu_footer['img_social'] as $item)
                     <li>
                         <a href="#">
-                            <img src="{{ asset('resources/img/'.$item) }}" alt="">
+                            <img src="{{ asset(Vite::asset('resources/img/'.$item)) }}" alt="social">
                         </a>
                     </li>
                     @endforeach
